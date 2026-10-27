@@ -1,0 +1,6 @@
+{
+  "name": "MIHValyuta.com - Canlı Valyuta Mübadiləsi və Pul Köçürməsi",
+  "description": "MIHValyuta.com — İmamverdi Məmmədov (Güvənin Ünvanı). Türkiyə və Azərbaycan arası canlı valyuta məzənnələri, 1000 ₺ minimum limit, 20 ₺ komissiya və 24/7 rəsmi WhatsApp xidməti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

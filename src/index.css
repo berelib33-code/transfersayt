@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Premium Black & Neon Palette */
+  --color-bg-primary: #07090D;
+  --color-bg-secondary: #0D1117;
+  --color-bg-card: #10151D;
+  --color-bg-elevated: #151B25;
+
+  --color-neon-primary: #00F5D4;
+  --color-neon-secondary: #8B5CF6;
+  --color-neon-highlight: #00A8FF;
+
+  --color-text-primary: #F5F7FA;
+  --color-text-secondary: #9CA3AF;
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+::selection {
+  background-color: #00F5D4;
+  color: #07090D;
+}
+::-moz-selection {
+  background-color: #00F5D4;
+  color: #07090D;
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-tap-highlight-color: transparent;
+  background-color: #07090D;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #07090D;
+  color: #F5F7FA;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Premium Dark Layered Background with Ultra-Restrained Ambient Glow */
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 245, 212, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 90% 40%, rgba(139, 92, 246, 0.035) 0%, transparent 40%),
+    radial-gradient(circle at 10% 75%, rgba(0, 168, 255, 0.03) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Tabular figures for rock-solid numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Premium Dark Neon Cards */
+.neon-card {
+  background: #10151D;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.06) inset,
+    0 20px 40px -15px rgba(0, 0, 0, 0.85);
+}
+
+.neon-card-elevated {
+  background: #151B25;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.08) inset,
+    0 24px 48px -12px rgba(0, 0, 0, 0.9);
+}
+
+.neon-card-interactive {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.neon-card-interactive:hover {
+  border-color: rgba(0, 245, 212, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 1px 0 0 rgba(0, 245, 212, 0.2) inset,
+    0 24px 48px -12px rgba(0, 0, 0, 0.95);
+}
+
+/* Premium Buttons */
+.btn-neon-primary {
+  background: #00F5D4;
+  color: #07090D;
+  font-weight: 700;
+  border: 1px solid #5effea;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.5) inset,
+    0 4px 16px -2px rgba(0, 245, 212, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-neon-primary:hover {
+  background: #26f7dc;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.7) inset,
+    0 6px 22px -2px rgba(0, 245, 212, 0.5);
+  transform: translateY(-1px);
+}
+.btn-neon-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-neon-secondary {
+  background: #8B5CF6;
+  color: #F5F7FA;
+  font-weight: 700;
+  border: 1px solid #a78bfa;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.3) inset,
+    0 4px 16px -2px rgba(139, 92, 246, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-neon-secondary:hover {
+  background: #9d74f7;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.5) inset,
+    0 6px 22px -2px rgba(139, 92, 246, 0.5);
+  transform: translateY(-1px);
+}
+.btn-neon-secondary:active {
+  transform: translateY(1px);
+}
+
+.btn-dark-elevated {
+  background: #151B25;
+  color: #F5F7FA;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.06) inset;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-dark-elevated:hover {
+  background: #1c2432;
+  border-color: rgba(0, 245, 212, 0.3);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.btn-dark-elevated:active {
+  transform: translateY(1px);
+}
+
+.btn-whatsapp-premium {
+  background: #128C7E;
+  color: #FFFFFF;
+  border: 1px solid #25D366;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.3) inset,
+    0 4px 16px -2px rgba(37, 211, 102, 0.35);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-whatsapp-premium:hover {
+  background: #25D366;
+  box-shadow: 
+    0 1px 0 0 rgba(255, 255, 255, 0.5) inset,
+    0 6px 22px -2px rgba(37, 211, 102, 0.5);
+  transform: translateY(-1px);
+}
+.btn-whatsapp-premium:active {
+  transform: translateY(1px);
+}
+
+/* Animations */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
